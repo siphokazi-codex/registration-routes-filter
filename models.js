@@ -4,16 +4,13 @@ module.exports = function(mongoURL){
   mongoose.Promise = global.Promise;
   mongoose.connect(mongoURL);
 
-  const regSchema = mongoose.Schema(
-    {
-      registration : String
-    });
+  const RegSchema = mongoose.Schema({registration : String});
 
-    regSchema.index({registration : 1}, { unique : true});
+  RegSchema.index({registration : 1}, { unique : true});
 
-    const Registration = mongoose.model('Registration', regSchema);
+  const Registration = mongoose.model('Registration', RegSchema);
 
-    return {
-      Registration
-    };
+  return{
+    Registration
+  };
 }

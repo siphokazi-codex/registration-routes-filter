@@ -9,7 +9,7 @@ const flash = require('express-flash');
 const session = require('express-session');
 const app = express();
 
-const mongoURL = process.env.MONGO_DB_URL || 'mongodb://localhost/username-test';
+const mongoURL = process.env.MONGO_DB_URL || 'mongodb://localhost/registration';
 
 const models = Models(mongoURL);
 
@@ -34,10 +34,12 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.get('/', function(req, res){
- res.redirect('registration/add!');
+  //you need to find everything on the db
+ res.redirect('/registration/add')
 });
 
-app.get('/registration/add', registrationNumbers.add);
+// app.get('/registration', registrationNumbers.add);
+app.get('/registration/add', registrationNumbers.addScreen);
 app.post('/registration/add', registrationNumbers.add);
 //app.get('/registration/:registration', registrationNumbers.add);
 
