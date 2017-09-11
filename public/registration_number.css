@@ -46,17 +46,48 @@ label {
 }
 
 .add {
-  margin: 20px 0px 0px 322px;
+  margin: 20px 0px 0px 20px;
   background-color: #6aa86a;
   padding: 8px;
   border-radius: 5px;
   font-size: 17px;
+  color: #f9ebb1;
+  border: 2px solid #f9ebb1;
+}
+
+.filter {
+  background-color: #6aa86a;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #f9ebb1;
+  border: 2px solid #f9ebb1;
+  width: 12%;
+  margin-left: 20px;
 }
 
 .error, .addRegistration {
   color: #9b1f0c;
 }
 
+
+
 .regList li {
   display: inline-block;
+}
+
+.filterForm {
+
+}
+
+.radios {
+  padding: 20px 0px 0px 20px;
+  background-color: #fff;
+  width: 90%;
+  border: 2px solid #f7cd79;
+  margin-left: 30px;
+}
+
+.radios label {
+  margin-right: 40px;
 }

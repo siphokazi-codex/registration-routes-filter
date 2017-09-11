@@ -8,7 +8,7 @@ module.exports = function(models){
     if (err) {
       return next(err);
     }
-console.log(registrations);
+
     res.render('registration/add', {
       // registration : registrations
       registration : registrations
@@ -20,10 +20,10 @@ console.log(registrations);
     //chech if this reg exists on the db using findOne
 
     var vehicle = {
-      registration : req.body.registration
-    };
-console.log(vehicle.registration);
-     if (!vehicle || !vehicle.registration){
+      registration : (req.body.registration).substr(0,2).toUpperCase() + ' ' + (req.body.registration).substr(2).toLowerCase()
+    }
+
+     if (!vehicle || !vehicle.registration || (!req.body.registration)){
         req.flash('error', 'Registration Number should not be blank');
         res.redirect('/registration/add');
      }
@@ -31,7 +31,10 @@ console.log(vehicle.registration);
        models.Registration.create(vehicle, function(err, results){
          if (err){
            if (err.code === 11000){
+              //console.log(vehicle.registration);
                req.flash('error', 'You have inputed registration number before, please input different registration number');
+               res.redirect('/registration/add');
+
            }
            else {
               return next(err);
@@ -44,38 +47,31 @@ console.log(vehicle.registration);
        });
      }
    }
-            //  })
-            //  .exec(function(err, results){
-            //    if (results){
-            //      results.save();
-            //    }
-            //  })
 
-          //  else{
-          //     return next(err);
-          //  }
-         //}
+   const filter = function(req, res) {
 
-    // }
-   //}
-  //   if (!registration){
-  //     req.flash('error', 'Registration Number should not be blank');
-  //   }
-   //
-  //    else if (!foundRegistration){
-  //      regList.push(registration);
-  //      req.flash('addRegistration', 'Registration Number added successfully');
-  //    }
-  //    else{
-  //      req.flash('error', 'You have inputed registration number before, please input different registration number')
-  //    }
-   //
-  //    res.render('registration/add', {registration : regList});
-  //  }
+     var town = req.body.towns;
+
+     if (town === 'All'){
+       res.redirect('registration/add');
+     }
+     else {
+       var regEx = ".*/" + town
+
+       models.Registration.find({registration:{'$regex': ".*" + town,$options: 'i'}}, function(err, results){
+         if (err) {
+           return next(err);
+         }
+
+         res.render('registration/add', {registration : results})
+       })
+     }
+   }
 
   return {
 
     add,
-    addScreen
+    addScreen,
+    filter
   }
 }

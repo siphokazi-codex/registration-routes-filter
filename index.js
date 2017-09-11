@@ -41,6 +41,7 @@ app.get('/', function(req, res){
 // app.get('/registration', registrationNumbers.add);
 app.get('/registration/add', registrationNumbers.addScreen);
 app.post('/registration/add', registrationNumbers.add);
+app.post('/filter', registrationNumbers.filter);
 //app.get('/registration/:registration', registrationNumbers.add);
 
 //start the server
