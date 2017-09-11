@@ -34,7 +34,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.get('/', function(req, res){
-  //you need to find everything on the db
  res.redirect('/registration/add')
 });
 
