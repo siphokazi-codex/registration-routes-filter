@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
   "directories": {
-    "test": "test",
-    "start": "node index.js"
+    "test": "test"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
@@ -23,7 +21,8 @@
     "mocha": "^3.5.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start" : "node index.js"
   },
   "repository": {
     "type": "git",
