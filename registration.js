@@ -24,7 +24,7 @@ module.exports = function(models){
     }
 
      if (!vehicle || !vehicle.registration || (!req.body.registration)){
-        req.flash('error', 'Registration Number should not be blank');
+        req.flash('error', 'Registration Number cannot not be blank, please input registration number');
         res.redirect('/registration/add');
      }
      else {
