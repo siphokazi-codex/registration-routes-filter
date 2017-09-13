@@ -2,11 +2,13 @@
   <h1>Registration Numbers WebApp</h1>
   <!--<div class="registration">-->
     <form action="/registration/add" method="post">
+      <br>
       <div class="row">
-       <br>
-       <div class="five columns"><label>Registration Number:<label>
-       <input class="regTxt" type="text" name="registration" placeholder="Enter Registration Number">
-       <input class="add" type="submit" name="" value="Add Number"><br><br></div>
+       <div class="four columns">
+         <label>Registration Number:<label>
+         <input class="regTxt" type="text" name="registration" placeholder="Enter Registration Number">
+         <input class="add" type="submit" name="" value="Add Number"><br><br>
+       </div>
       </div>
 
         <div class="addRegistration">
@@ -27,7 +29,7 @@
 <div class="row">
   <div class="radios">
     <form class="filterForm" action="/filter" method="post">
-      <div class="eleven columns"><input type="radio" name="towns" id="All" value="All"><label>ALL</label>
+      <div class="four columns"><input type="radio" name="towns" id="All" value="All"><label>ALL</label>
       <input type="radio" name="towns" id="CA" value="CA"><label>Cape Town</label>
       <input type="radio" name="towns" id="CY" value="CY"><label>Bellville</label>
       <input type="radio" name="towns" id="CJ" value="CJ"><label>Paarl</label>
