@@ -15,8 +15,8 @@ const models = Models(mongoURL);
 
 const registrationNumbers = RegistrationNumbers(models);
 
-const mongoose = require('mongoose');
-mongoose.connect(mongoURL)
+//const mongoose = require('mongoose');
+//mongoose.connect(mongoURL)
 
 app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 60000 * 30 }}));
 app.use(flash());

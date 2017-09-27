@@ -2,14 +2,16 @@
   <h1>Registration Numbers WebApp</h1>
   <!--<div class="registration">-->
     <form action="/registration/add" method="post">
-        <br>
-        <label>Registration Number:<label>
-        <input class="regTxt" type="text" name="registration" placeholder="Enter Registration Number">
-        <input class="add" type="submit" name="" value="Add Number"><br><br>
+      <div class="row">
+       <div class="three columns">
+         <label>Registration Number:<label>
+         <input class="regTxt" type="text" name="registration" placeholder="Enter Registration Number">
+         <input class="add" type="submit" name="" value="Add Number"><br><br>
+       </div>
+      </div>
 
         <div class="addRegistration">
           {{messages.addRegistration}}
-          <br>
           <br>
         </div>
 
@@ -17,28 +19,31 @@
           <div class="error">
             {{messages.error}}
             <br>
-            <br>
           </div>
         {{/if}}
+   </form>
 
-    </form>
-
+<div class="row">
   <div class="radios">
     <form class="filterForm" action="/filter" method="post">
-      <input type="radio" name="towns" id="All" value="All"><label>ALL</label>
+      <div class="four columns"><input type="radio" name="towns" id="All" value="All"><label>ALL</label>
       <input type="radio" name="towns" id="CA" value="CA"><label>Cape Town</label>
       <input type="radio" name="towns" id="CY" value="CY"><label>Bellville</label>
       <input type="radio" name="towns" id="CJ" value="CJ"><label>Paarl</label>
       <input type="radio" name="towns" id="CL" value="CL"><label>Stellenbosch</label>
-      <input class="filter" type="submit" name="" value="Filter"><br><br>
+      <input class="filter" type="submit" name="" value="Filter"><br><br></div>
     </form>
 
+<div class="row">
     <div class="regList">
+     <div class="four columns">
       <ul>
         {{#each registration}}
           <li>{{registration}}</li>
         {{/each}}
       </ul>
     </div>
+    </div>
+  </div>
   </div>
 </div>
