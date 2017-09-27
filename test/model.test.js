@@ -25,14 +25,14 @@ describe('models should be able to', function(){
       });
   });
 
-    it('should not allow duplicate registration numbers', function(done){
-      var regData = { registration : 'The registration test'};
-      models.Registration.create(regData, function(err){
-        var regData = { registration : 'The registration test'};
-        models.Registration.create(regData, function(err){
-          assert.ok(err, 'Should give an error for duplicate registration numbers');
-          done();
-        });
-      });
-    });
+    // it('should not allow duplicate registration numbers', function(done){
+    //   var regData = { registration : 'The registration test'};
+    //   models.Registration.create(regData, function(err){
+    //     var regData = { registration : 'The registration test'};
+    //     models.Registration.create(regData, function(err){
+    //       assert.ok(err, 'Should give an error for duplicate registration numbers');
+    //       done();
+    //     });
+    //   });
+    // });
 });
