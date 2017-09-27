@@ -2,7 +2,6 @@
   <h1>Registration Numbers WebApp</h1>
   <!--<div class="registration">-->
     <form action="/registration/add" method="post">
-      <br>
       <div class="row">
        <div class="three columns">
          <label>Registration Number:<label>
@@ -14,13 +13,11 @@
         <div class="addRegistration">
           {{messages.addRegistration}}
           <br>
-          <br>
         </div>
 
         {{#if messages.error}}
           <div class="error">
             {{messages.error}}
-            <br>
             <br>
           </div>
         {{/if}}

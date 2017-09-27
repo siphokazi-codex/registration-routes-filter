@@ -34,7 +34,7 @@ module.exports = function(models){
               //console.log(vehicle.registration);
                req.flash('error', 'You have inputed registration number before, please input different registration number');
                res.redirect('/registration/add');
-
+ls
            }
            else {
               return next(err);
