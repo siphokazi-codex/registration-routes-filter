@@ -9,7 +9,7 @@
 ## Get the Github Repository
 #### Clone the Githhub Repository
   - On your terminal go to the directory where you want the application to be saved
-  - On the terminal type git clone https://github.com/siphokazi-codex/registration-routes-filter[Or you can click the direct link](https://github.com/siphokazi-codex/registration-routes-filter)
+  - On the terminal type git clone https://github.com/siphokazi-codex/registration-routes-filter [Or you can click the direct link](https://github.com/siphokazi-codex/registration-routes-filter).
 
 ## Installations
 ### Different System Software needed for application
@@ -48,4 +48,4 @@
 
 
 ## License
-  - The license for the softwares used in this application is released under the MIT License[MIT license](https://opensource.org/licenses/MIT)
+  - The license for the softwares used in this application is released under the MIT License. [MIT license](https://opensource.org/licenses/MIT)
