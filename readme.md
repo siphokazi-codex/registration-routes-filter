@@ -3,13 +3,13 @@
 ## About the application
   This application allows a user to enter different car registration numbers for different towns and filters the registration numbers of the different towns entered by user, according to the town selected by the user. The application also has a validation which checks if town entered by the user is not already on the Mongo database and does not add the town, if a user has not entered any registration number.
 
-## Different platforms the application can run on
+## Platforms the application can run on
   - Linux (Ubuntu)
 
 ## Get the Github Repository
 #### Clone the Githhub Repository
   - On your terminal go to the directory where you want the application to be saved
-  - On the terminal type git clone https://github.com/siphokazi-codex/registration-routes-filter [Or you can click the direct link](https://github.com/siphokazi-codex/registration-routes-filter).
+  - On the terminal type: git clone https://github.com/siphokazi-codex/registration-routes-filter Or [you can click the direct link](https://github.com/siphokazi-codex/registration-routes-filter).
 
 ## Installations
 ### Different System Software needed for application
@@ -18,7 +18,8 @@
   - On your terminal, go to the folder containing the application.
   - type npm install (to create node modules for the package.json file in the application).
 
-## Tests [![Build Status]Tests for the application(https://travis-ci.org/siphokazi-codex/registration-routes-filter.svg?branch=master)](https://travis-ci.org/siphokazi-codex/registration-routes-filter)
+## Tests
+  - Tests for the application [![Build Status](https://travis-ci.org/siphokazi-codex/registration-routes-filter.svg?branch=master)](https://travis-ci.org/siphokazi-codex/registration-routes-filter)
 
 ## Usage
 ### Output Example
