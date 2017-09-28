@@ -18,8 +18,7 @@
   - On your terminal, go to the folder containing the application.
   - type npm install (to create node modules for the package.json file in the application).
 
-## Tests
-[![Build Status]Tests for the application (https://travis-ci.org/siphokazi-codex/registration-routes-filter.svg?branch=master)](https://travis-ci.org/siphokazi-codex/registration-routes-filter)
+## Tests [![Build Status]Tests for the application(https://travis-ci.org/siphokazi-codex/registration-routes-filter.svg?branch=master)](https://travis-ci.org/siphokazi-codex/registration-routes-filter)
 
 ## Usage
 ### Output Example
