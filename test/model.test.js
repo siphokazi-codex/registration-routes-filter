@@ -16,10 +16,13 @@ describe('models should be able to', function(){
     var regData = { registration : 'The test registration'};
     models.Registration
       .create(regData, function(err){
+        if (err){
+          return done(err);
+        }
         //done(err);
 
          models.Registration.find({registration : 'The registration test'}, function(err, registration){
-             assert.equal(1, registration.length);
+            assert.equal(1, registration.length);
             done(err);
          });
       });
