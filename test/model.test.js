@@ -20,7 +20,7 @@ describe('models should be able to', function(){
 
          models.Registration.find({registration : 'The registration test'}, function(err, registration){
              assert.equal(1, registration.length);
-             //done(err);
+            done(err);
          });
       });
   });
