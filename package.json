@@ -3,37 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "test": "node_modules/mocha/bin/mocha",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4",
-    "express-flash": "^0.0.2",
-    "express-handlebars": "^3.0.0",
-    "express-session": "^1.15.5",
-    "mongodb": "^2.2.31",
-    "mongoose": "^4.11.10",
-    "nodemon": "^1.11.0"
-  },
-  "devDependencies": {
-    "mocha": "^3.5.0"
-  },
-
   "scripts": {
-    "test": "mocha",
-    "start" : "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/siphokazi-codex/registration-routes-filter.git"
+    "test": "node_modules/mocha/bin/mocha"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/siphokazi-codex/registration-routes-filter/issues"
-  },
-  "homepage": "https://github.com/siphokazi-codex/registration-routes-filter#readme"
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-flash": "git://github.com/RGBboy/express-flash.git",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.5",
+    "mocha": "^3.5.0",
+    "mongoose": "^4.11.10",
+    "nodemon": "^1.11.0"
+  }
 }
