@@ -13,7 +13,7 @@ module.exports = function(mongoURL){
 
   RegSchema.index({registration : 1}, { unique : true});
 
-  const Registration = mongoose.model('registration', RegSchema);
+  const Registration = mongoose.model('Registration', RegSchema);
 
   return{
     Registration
