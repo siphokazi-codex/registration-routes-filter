@@ -23,7 +23,7 @@ describe('models should be able to', function() {
         }
         //done(err);
 
-        models.Registration.find(regData, function(err, registration) {
+        models.Registration.find(regData, function(err, registration){
           assert.equal(1, registration.length);
           done(err);
         });

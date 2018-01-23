@@ -41,7 +41,7 @@
   - Create an issue and describe your idea
   - Fork it [https://github.com/siphokazi-codex/registration-routes-filter]
   - Create your feature branch (git checkout -b my-new-feature)
-  - Commit your changes (git commit -am 'Add some feature')
+  - Commit your changes (git commit -m 'Add some feature')
   - Publish the branch (git push origin my-new-feature)
   - Create a new Pull Request
   - Finish! :white_check_mark:
